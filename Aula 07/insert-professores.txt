@@ -1,0 +1,8 @@
+insert into professores (nome, especialidade, datanascimento, dataadmissao, inativo, resumo, salario) values ('Patrícia', 'Java', '15/04/1995', '2019-03-17 08:25:05', false, 'Texto grande', 3500.00);
+insert into professores (nome, especialidade, datanascimento, dataadmissao, inativo, resumo, salario) values ('Fernanda', 'Teste', '09/06/1991', '2019-02-11 08:25:05', false, 'Texto grande', 6500.00);
+insert into professores (nome, especialidade, datanascimento, dataadmissao, inativo, resumo, salario) values ('João', 'Relatórios', '17/07/1991', '2020-08-14 08:25:05', false, 'Texto grande', 2500.00);
+insert into professores (nome, especialidade, datanascimento, dataadmissao, inativo, resumo, salario) values ('Fernando', 'HTML', '24/08/1985', '2021-01-01 08:25:05', true, 'Texto grande', 3000.00);
+insert into professores (nome, especialidade, datanascimento, dataadmissao, inativo, resumo, salario) values ('Camila', 'Administração', '28/09/1998', '2018-03-09 08:25:05', false, 'Texto grande', 4500.00);
+insert into professores (nome, especialidade, datanascimento, dataadmissao, inativo, resumo, salario) values ('Roberto', 'Banco de dados', '10/10/1989', '2018-07-04 08:25:05', false, 'Texto grande', 3500.00);
+insert into professores (nome, especialidade, datanascimento, dataadmissao, inativo, resumo, salario) values ('Gabriel', 'HTML', '12/11/1994', '2021-06-12 08:25:05', true, 'Texto grande', 3200.00);
+insert into professores (nome, especialidade, datanascimento, dataadmissao, inativo, resumo, salario) values ('Pamela', 'Angular', '04/04/2000', '2018-02-08 08:25:05', false, 'Texto grande', 5000.00);
