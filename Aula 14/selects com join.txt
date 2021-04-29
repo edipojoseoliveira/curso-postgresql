@@ -1,0 +1,64 @@
+select * from cursos;
+
+select * from professores;
+
+select * from cursos
+inner join professores on cursos.idprofessor = professores.id;
+
+select cursos.nome, professores.nome from cursos
+inner join professores on cursos.idprofessor = professores.id;
+
+select 
+	cursos.nome as curso, professores.nome as professor 
+from cursos
+inner join professores on cursos.idprofessor = professores.id;
+
+select * from alunos;
+select * from cursos;
+select * from curso_aluno_relacao;
+
+select * from alunos
+inner join curso_aluno_relacao on alunos.id = curso_aluno_relacao.idaluno
+inner join cursos on cursos.id = curso_aluno_relacao.idcurso;
+
+select 
+	alunos.nome as aluno, 
+	cursos.nome as curso, 
+	professores.nome as professor 
+from alunos
+inner join curso_aluno_relacao on alunos.id = curso_aluno_relacao.idaluno
+inner join cursos on cursos.id = curso_aluno_relacao.idcurso
+inner join professores on professores.id = cursos.idprofessor;
+
+select * from cursos;
+select * from professores;
+
+insert into cursos (nome) values ('Angular');
+insert into professores (nome) values ('Leticia');
+
+select 
+	cursos.nome as curso, professores.nome as professor 
+from cursos
+inner join professores on cursos.idprofessor = professores.id;
+
+select 
+	cursos.nome as curso, professores.nome as professor 
+from cursos
+left join professores on cursos.idprofessor = professores.id;
+
+select 
+	cursos.nome as curso, professores.nome as professor 
+from cursos
+right join professores on cursos.idprofessor = professores.id;
+
+select 
+	cursos.nome as curso, professores.nome as professor 
+from cursos
+full join professores on cursos.idprofessor = professores.id;
+
+select 
+	cursos.nome as curso, professores.nome as professor 
+from cursos
+cross join professores;
+
+

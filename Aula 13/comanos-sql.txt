@@ -1,0 +1,25 @@
+create table alunos (
+	id serial primary key,
+	nome varchar(100) not null
+);
+
+create table curso_aluno_relacao(
+	idcurso integer not null,
+	idaluno integer not null,
+	
+	foreign key (idcurso) references cursos(id),
+	foreign key (idaluno) references alunos(id),
+	primary key (idcurso, idaluno)
+);
+
+select * from alunos
+insert into alunos (nome) values ('Fernanda');
+insert into alunos (nome) values ('Patrícia');
+
+select * from cursos;
+
+select * from curso_aluno_relacao
+insert into curso_aluno_relacao (idcurso, idaluno) values (1, 1);
+insert into curso_aluno_relacao (idcurso, idaluno) values (2, 1);
+insert into curso_aluno_relacao (idcurso, idaluno) values (2, 2);
+insert into curso_aluno_relacao (idcurso, idaluno) values (1, 3);

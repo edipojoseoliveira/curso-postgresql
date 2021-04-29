@@ -1,0 +1,15 @@
+update cursos
+set nome = 'Curso de PostgreSQL'
+where id = 1;
+
+update cursos
+set nome = 'Curso de HTML e CSS'
+where id = 3;
+
+update professores
+set nome = 'Edipo Oliveira', especialidade = 'Banco de dados'
+where id = 2;
+
+update professores
+set salario = salario * 1.1
+where dataadmissao <= '31/12/2018';
